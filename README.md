@@ -19,8 +19,6 @@
 6. Install git using Homebrew
 `$ brew install git`
 
-7. Clone the ZLemma Repository
-`$ git clone https://aadesh@bitbucket.org/zlemma/zlemma.git`
 
 8. We will install MySQL using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).
 To install, run:
@@ -56,36 +54,10 @@ As you can see in the ouput from Homebrew, before we can use MySQL we first need
 
 16. `$ brew cask install iterm2`
 
-17. `$ brew install enchant` Pre-requsite before doing pip install
 
-18. `$ brew install libevent` Pre-requsite before doing pip install
-
-19. `$ brew install gcc`  Pre-requsite before doing pip install
 ~~~~
 Rwanda
 ~~~~
-20. Install ZLemma requirements. 
-`pip install -r requirements.txt --extra-index-url=http://chameleon1.zlemma.com:8080/simple/ --download-cache=~/tmp`
-This will ensure that you don’t re-download the requirements again if internet fails.
-
-21. Run `$ ipython`
-
-22. ipython> nltk.download('punkt')
-ipython> nltk.download('brown')
-ipython> nltk.download('stopwords')
-ipython> nltk.download('wordnet')
-
-23. pip install facebook
-
-24. brew install geoip
-
-pip install geoip
-
-/Users/Your Name/venv/lib/python2.7/site-packages/resume_parser/StructuredHTMLParser/PDFLibrary/64bit/tetlib_py.so
-
-```
-pip install pdfcrowd
-```
 
 
 brew install wget
