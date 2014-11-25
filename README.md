@@ -2,8 +2,9 @@
 ***
 
 1. Install command line tools by pasting the below command in your terminal
-`$ xcode-select --install`
-
+```
+$ xcode-select --install
+```
 2.  Install Hombrew! In the terminal paste the following line (without the \$), hit Enter, and follow the steps on the screen:
 `$ ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
 
