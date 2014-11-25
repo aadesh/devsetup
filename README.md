@@ -1,38 +1,52 @@
 # Setting up dev environment for OSX 10.9 Mavericks.
 
-1. Get started by intalling the command line tools. Open your terminal & paste the below command.
+Get started by intalling the command line tools. Open your terminal & paste the below command.
 ~~~
 $ xcode-select --install
 ~~~
-2.  Install Hombrew! In the terminal paste the following line (without the \$), hit Enter, and follow the steps on the screen:
+
+Install Hombrew! In the terminal paste the following line (without the \$), hit Enter, and follow the steps on the screen:
 ~~~~
-`$ ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
+$ ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
 ~~~~
 
-3. One thing we need to do is tell the system to use programs installed by Hombrew (in /usr/local/bin) rather than the OS default if it exists. We do this by adding /usr/local/bin to your $PATH environment variable: 
-`$ echo 'export PATH="/usr/local/bin:\$PATH"' >> ~/.bash_profile`
+One thing we need to do is tell the system to use programs installed by Hombrew (in /usr/local/bin) rather than the OS default if it exists. We do this by adding /usr/local/bin to your $PATH environment variable: 
+~~~
+$ echo 'export PATH="/usr/local/bin:\$PATH"' >> ~/.bash_profile
 
-4. Open a new terminal tab with Cmd+T (you should also close the old one), then run the following command to make sure everything works:
-`$ brew doctor`
+Open a new terminal tab with Cmd+T (you should also close the old one), then run the following command to make sure everything works:
+~~~
+$ brew doctor
+~~~
 
-5. To update Homebrew's directory of formulae, run:
-`$ brew update`
+To update Homebrew's directory of formulae, run:
+~~~
+$ brew update
+~~~
 
-6. Install git using Homebrew
-`$ brew install git`
+Install git using Homebrew
+~~~
+$ brew install git
+~~~
 
 
-8. We will install MySQL using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).
+We will install MySQL using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).
 To install, run:
-`$ brew update # Always good to do`
-`$ brew install mysql`
+~~~
+$ brew update # Always good to do
+$ brew install mysql
+~~~
 As you can see in the ouput from Homebrew, before we can use MySQL we first need to set it up with:
-`$ unset TMPDIR`
-`$ mkdir /usr/local/var`
-`$ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tm`
+~~~
+$ unset TMPDIR
+$ mkdir /usr/local/var
+$ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tm
+~~~
 
-9. Install python using home-brew. This will also install **Pip** & its dependency **Distribute**
-`$ brew install python`
+Install python using home-brew. This will also install **Pip** & its dependency **Distribute**
+~~~
+$ brew install python
+~~~
 
 10. Add these lines to `.bash_profile`
 `PATH=/usr/local/share/python:$PATH`
