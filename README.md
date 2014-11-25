@@ -1,10 +1,9 @@
 # Setting up dev environment for OSX 10.9 Mavericks.
-***
 
-1. Install command line tools by pasting the below command in your terminal
-```
+1. Get started by intalling the command line tools. Open your terminal & paste the below command.
+~~~
 $ xcode-select --install
-```
+~~~
 2.  Install Hombrew! In the terminal paste the following line (without the \$), hit Enter, and follow the steps on the screen:
 ~~~~
 `$ ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
