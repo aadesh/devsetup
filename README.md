@@ -13,6 +13,7 @@ $ ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/mas
 One thing we need to do is tell the system to use programs installed by Hombrew (in /usr/local/bin) rather than the OS default if it exists. We do this by adding /usr/local/bin to your $PATH environment variable: 
 ~~~
 $ echo 'export PATH="/usr/local/bin:\$PATH"' >> ~/.bash_profile
+~~~
 
 Open a new terminal tab with Cmd+T (you should also close the old one), then run the following command to make sure everything works:
 ~~~
